@@ -1,0 +1,11 @@
+CREATE DATABASE clientsdb;
+
+use clientsdb;
+
+CREATE TABLE clients(
+  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  cedula VARCHAR(10) ,
+  nombre VARCHAR(200),
+  apellido VARCHAR(200), 
+  createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+); 
