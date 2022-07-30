@@ -19,6 +19,10 @@ const Table = (props) => {
     );
   };
 
+  useEffect(() => {
+    setFilteredUsers(users);
+  }, [users]);
+
   const router = useRouter();
   return (
     <div className="flex flex-col gap-2 max-h-96 overflow-y-auto">
